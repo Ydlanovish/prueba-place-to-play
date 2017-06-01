@@ -20,7 +20,14 @@
 	<!--js-->
 	<script type="text/javascript" src="js/prueba-jonaldy.js"></script>
 	<script type="text/javascript" src="js/modernizr.js"></script>
-	<script src="js/jquery.js"></script>
+		<script src="js/jquery.js"></script>
+		<script>
+		function validarEmail( email ) {
+    expr = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    if ( !expr.test(email) )
+        alert("Error: La dirección de correo " + email + " es incorrecta.");
+}
+		</script>
 
     </head>
 
@@ -129,7 +136,8 @@
 				<div class="col-sm-4">
 				    <div class="formu-grupal">
 					<label>Correo Electrónico*</label>
-					<input type="email" id="email" class="formu-control" required>
+					<input type="email" id="email" name="email" data-validation="email" class="formu-control" required>
+			   
 				    </div>
 				</div>
 
@@ -267,14 +275,13 @@
                                                         <label>Entidad Bancaria*</label>
                                                         <select id="banco" class="formu-control custom-select">
                                                             <option value="seleccione">Seleccione:</option>
-							    <option value="1040">BANCO AGRARIO</option>
-							    <option value="1052">BANCO AV VILLAS</option>
-							    <option value="1013">BANCO BBVA COLOMBIA S.A.</option>
-							    <option value="1032">BANCO CAJA SOCIAL</option>
-							    <option value="1019">BANCO COLPATRIA</option>
-							    <option value="1066">BANCO COOPERATIVO COOPCENTRAL</option>
-							    <option value="1006">BANCO CORPBANCA S.A</option>
-							    <option value="1051">BANCO DAVIVIENDA</option>
+							    <option value="Banco Agrario">BANCO AGRARIO</option>
+							    <option value="Banco AV Villas">BANCO AV VILLAS</option>
+							    <option value="Banco BBVA Colombia S.A.">BANCO BBVA COLOMBIA S.A.</option>
+							    <option value="Banco Caja Social">BANCO CAJA SOCIAL</option>
+							    <option value="Banco Colpatria">BANCO COLPATRIA</option>
+							    
+							    <option value="Banco Davivienda">BANCO DAVIVIENDA</option>
                                                         </select>
                                                     </div>
                                                 </div>
