@@ -562,11 +562,10 @@ footer{
   }
 }
 
-table {
-    margin: 5% 0 !important;
-}
+
 
 table { 
+  margin: 2% 0 !important;
   width: 100%; 
   border-collapse: collapse; 
 }
