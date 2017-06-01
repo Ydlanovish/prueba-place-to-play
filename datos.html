@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="es">
+    <head>
+	<meta charset="utf-8">
+	<title>Pagos en Línea</title>
+	<meta name="description" content="Sistemas de Pagos en Línea"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" href="img/fav.png"/>
+
+	<!-- Estilos-->
+	<link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/prueba-jonaldy.css"/>
+
+	<!--Fuentes Google Font-->
+        <link href="http://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700%7COswald:300,400,500,600,700" rel="stylesheet">
+
+	<!--js-->
+	<script type="text/javascript" src="js/prueba-jonaldy.js"></script>
+	<script type="text/javascript" src="js/modernizr.js"></script>
+	<script src="js/jquery.js"></script>
+
+    </head>
+
+    <body>
+	<header>
+	    <figure id="logo">
+		<img src="img/logo.png"/>
+
+	    </figure>
+
+	</header>
+	<section>
+
+
+
+
+	    <div class="contenedor">
+		<div class="row" id="columna_ppal">
+		    <div class="col-md-12" style="margin-top:5%;">
+			<div class="custom-header-jhqs texto-central">
+			    <h2>Resumen de la Compra</h2>
+
+			</div> 
+			<div class="tab-header" >
+			    <div class="col-lg-10 col-lg-push-1 col-md-12  col-sm-12 col-xs-12"> 
+				<table class="table table-sm table-inverse">
+				    <thead>
+
+					<tr>
+					    <th>Descripción</th> 
+					    <td colspan="1">Permoda</td> 
+
+					</tr>
+					<tr>
+
+					    <th>Referencia</th> 
+					    <td>N551600</td>
+
+					</tr>
+				    </thead>
+				    <tbody>
+					<tr>
+					    <th>Valor</th>
+					    <td colspan="1"> $ 156.900</td> 
+
+
+					</tr>
+					<tr>
+					    <th>Moneda</th> 
+					    <td colspan="1"> COP</td>
+
+
+					</tr>
+
+				    </tbody>
+				</table>
+			    </div>
+			</div>
+		    </div>
+		    <div class="col-lg-10 col-lg-push-1 col-md-12  col-sm-12 col-xs-12" style="margin-top: 2%;">
+
+			<form action="" class="signup-form publico-objetivo active">
+			    <div class="row">
+				<div class="custom-header-jhqs texto-central">
+				    <h2>   Ingrese sus Datos</h2><br>
+				</div>
+
+				<div class="col-sm-4">
+				    <div class="formu-grupal">
+					<label>Tipo de Documento*</label>
+					<select id="tipo_documento" class="formu-control custom-select">
+					    <option value="seleccione">Seleccione</option>
+					    <option value="cedulacuidadania">Cédula de Ciudadania (CC)</option>
+					    <option value="cedulaextranjeria">Cédula de Extranjería(CE)</option>
+					    <option value="nit">NIT</option>
+					    <option value="tarjetaidentidad">Tarjeta Identidad (TI)</option>
+					</select>
+				    </div>
+				</div>
+
+
+				<div class="col-sm-4">
+				    <div class="formu-grupal">
+					<label>Documento de Identidad*</label>
+					<input type="number" id="documento" class="formu-control" required>
+				    </div>
+				</div>
+				<div class="col-sm-4">
+				    <div class="formu-grupal">
+					<label>Nombre*</label>
+					<input type="text" id="nombre" class="formu-control" required>
+				    </div>
+				</div>
+
+
+			    </div>
+
+			    <div class="row">
+				<div class="col-sm-4">
+				    <div class="formu-grupal">
+					<label>Apellido*</label>
+					<input type="text" id="apellido" class="formu-control" required>
+				    </div>
+				</div>
+
+				<div class="col-sm-4">
+				    <div class="formu-grupal">
+					<label>Correo Electrónico*</label>
+					<input type="email" id="email" class="formu-control" required>
+				    </div>
+				</div>
+
+
+				<div class="col-sm-4">
+				    <div class="formu-grupal">
+					<label>Celular*</label> 
+					<input type="text" id="celular" class="formu-control" required>
+				    </div>
+				</div>
+
+
+			    </div>
+
+			</form>
+
+                        <div class="col-md-12  col-sm-12 col-xs-12 ">
+
+			    <div class="custom-header-jhqs texto-central">
+				<br>
+				<h2>   Formas de Pago</h2>
+
+                            </div>
+                            <div class="checkout-tabs">
+
+                                <ul class="nav nav-tabs text-right" role="tablist">
+                                    <li role="presentation" class="active"><a href="#pago-tc" aria-controls="pago-tc" role="tab" data-toggle="tab"><span>1</span>  Tarjeta de Crédito</a></li>
+
+				    <li role="presentation"><a href="#pago-pse"   aria-controls="pago-pse" role="tab" data-toggle="tab"><span>2</span>  PSE</a></li>
+
+                                </ul>
+
+
+                                <div class="tab-content">
+                                    <div class="custom-header-jhqs texto-central">
+
+
+
+				    </div>
+                                    <div role="tabpanel" class="tab-pane active" id="pago-tc">
+
+
+					<form action="" class="tarjeta-de-pago publico-objetivo active">
+                                            <div class="row">
+                                                <div class="col-sm-4">
+                                                    <div class="formu-grupal">
+                                                        <label>Numero de Tarjeta*</label>
+                                                        <input type="number" id="num_tarjeta" class="formu-control" placeholder="000000000000" required>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-3">
+                                                    <div class="formu-grupal">
+                                                        <label>Código de Seguridad*</label>
+                                                        <input type="number" id="codigo_seguridad" class="formu-control "  required>
+
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-4">
+                                                    <div class="formu-grupal">
+                                                        <label>Fecha de Vencimiento*</label>
+                                                        <input type="date" id="fecha_vencimiento" class="formu-control " required>
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-3">
+                                                    <div class="formu-grupal">
+                                                        <label>Número de Cuotas*</label>
+                                                        <select id="num_cuotas" class="formu-control custom-select">
+							    <option value="seleccione">Seleccione</option>
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                            <option value="4">4</option>
+                                                            <option value="5">5</option>
+                                                            <option value="6">6</option>
+															<option value="7">7</option>
+                                                            <option value="8">8</option>
+                                                            <option value="9">9</option>
+                                                            <option value="10">10</option>
+                                                            <option value="11">11</option>
+                                                            <option value="12">12</option>
+                                                            <option value="13">13</option>
+                                                            <option value="14">14</option>
+                                                            <option value="15">15</option>
+                                                            <option value="16">16</option>
+															<option value="17">17</option>
+                                                            <option value="18">18</option>
+                                                            <option value="19">19</option>
+                                                            <option value="20">20</option>
+                                                            <option value="21">21</option>
+                                                            <option value="22">22</option>
+                                                            <option value="23">23</option>
+                                                            <option value="24">24</option>
+                                                            <option value="25">25</option>
+                                                            <option value="26">26</option>
+															<option value="27">27</option>
+                                                            <option value="28">28</option>
+                                                            <option value="29">29</option>
+                                                            <option value="30">30</option>
+                                                            <option value="31">31</option>
+                                                            <option value="32">32</option>
+                                                            <option value="33">33</option>
+                                                            <option value="34">34</option>
+                                                            <option value="35">35</option>
+                                                            <option value="36">36</option>
+                                                            
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+
+					    <div class="clearfix form-action">
+                                                <div class="btn-pago pull-right">
+
+                                                    <input type="button" class="btn btn-pago-enfocado" value="Pagar" onclick="pagar_tarjeta()" >
+                                                </div>
+                                            </div>
+                                        </form>
+ 
+					<br/>
+                                    </div>
+				    <div role="tabpanel" class="tab-pane" id="pago-pse">
+
+
+                                        <form action="" class="tarjeta-de-pago publico-objetivo active">
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <div class="formu-grupal">
+                                                        <label>Entidad Bancaria*</label>
+                                                        <select id="banco" class="formu-control custom-select">
+                                                            <option value="seleccione">Seleccione:</option>
+							    <option value="1040">BANCO AGRARIO</option>
+							    <option value="1052">BANCO AV VILLAS</option>
+							    <option value="1013">BANCO BBVA COLOMBIA S.A.</option>
+							    <option value="1032">BANCO CAJA SOCIAL</option>
+							    <option value="1019">BANCO COLPATRIA</option>
+							    <option value="1066">BANCO COOPERATIVO COOPCENTRAL</option>
+							    <option value="1006">BANCO CORPBANCA S.A</option>
+							    <option value="1051">BANCO DAVIVIENDA</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-6">
+						    <div class="formu-grupal">
+                                                        <label>Tipo de Cliente*</label>
+                                                        <select id="tipo_cliente" class="formu-control custom-select">
+                                                            <option value="seleccione">Seleccione</option>
+                                                            <option value="persona-natural">Persona Natural</option>
+                                                            <option value="persona-juridica">Persona Jurídica</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-sm-4">
+						    <div class="formu-grupal">
+                                                        <label>Tipo de Cuenta*</label>
+                                                        <select id="tipo_cuenta" class="formu-control custom-select">
+                                                            <option value="seleccione">Seleccione</option>
+                                                            <option value="ahorros">Cuenta de Ahorros</option>
+                                                            <option value="corriente">Cuenta Corriente</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+					
+
+                                            </div>
+                                            <div class="clearfix form-action">
+                                                <div class="btn-pago pull-right">
+
+                                                    <input type="button" class="btn btn-pago-enfocado" value="Pagar" onclick="pagar_pse()">
+                                                </div>
+                                            </div>
+                                        </form>
+
+
+                                    </div>
+
+				</div>
+
+			    </div>
+
+
+			</div>
+		    </div>
+		</div>
+                
+                <div class="row" id="columna_respuesta" >
+              
+                </div>
+	    </div>
+	    
+	    
+	</section>
+	<footer>
+<div class="info-bar">
+                        <div class="info-bar-col">
+        <h5 class="info-bar-title">Si tiene alguna inquietud comunicate con nosostros cel:322 637 75 04</h5> 
+                            <p> info@cominicaciones.com </p>
+                        </div>
+                      
+                     
+                    </div>
+	</footer>
+
+    </body>
+</html>
