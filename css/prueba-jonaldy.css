@@ -351,13 +351,13 @@ input[type=number] {
 }
 
 .nav.nav-tabs > li > a:hover {
-  color: #262634;
+  color: #BD4D1B;
   background-color: transparent;
   border-color: transparent;
 }
 
 .nav.nav-tabs > li.active a, .nav.nav-tabs > li.active a:hover, .nav.nav-tabs > li.active a:focus {
-  color: #262634;
+  color: #8FAF40;
   background-color: transparent;
   border-bottom-color: transparent;
 }
